@@ -98,22 +98,21 @@ input:focus::placeholder {
   color: var(--color-hero-background);
   background-color: var(--color-accent);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button:hover {
   fill: var(--color-white-background);
   background-color: var(--color-pressed-states);
   border: none;
-  
 }
 .modal-button:focus {
   fill: var(--color-white-background);
   background-color: var(--color-pressed-states);
   border: none;
-  
 }
 .modal-button-icon {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-title {
   color: var(--color-hero-background);
@@ -143,7 +142,6 @@ input:focus::placeholder {
 }
 .order-modal-input {
   position: relative;
-  
 }
 .input-form {
   width: 100%;
@@ -161,7 +159,7 @@ input:focus::placeholder {
   top: 50%;
   transform: translateY(-50%);
   left: 16px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-form:hover,
 .input-form:focus {
@@ -173,7 +171,7 @@ input:focus::placeholder {
 .input-form:hover + .order-modal-icon,
 .input-form:focus + .order-modal-icon {
   fill: var(--color-primary-brand);
-  }
+}
 .order-form-input-textarea {
   margin-bottom: 16px;
 }
@@ -221,11 +219,15 @@ input:focus::placeholder {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   background-color: var(--color-white-background);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: transparent;
 }
 .order-modal-icon-checkbox {
-  fill: transparent;
+  
   transform: scale(1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 input[type='checkbox']:checked
@@ -247,7 +249,7 @@ input[type='checkbox']:checked
 }
 .order-modal-button-send {
   color: var(--color-white-background);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -261,12 +263,11 @@ input[type='checkbox']:checked
   height: 56px;
   display: block;
   margin: 0 auto;
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-modal-button-send:hover,
 .order-modal-button-send:focus {
   color: var(--color-white-background);
   background-color: var(--color-pressed-states);
-  
 }
