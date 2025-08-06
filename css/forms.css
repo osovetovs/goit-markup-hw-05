@@ -176,7 +176,7 @@ input:focus::placeholder {
 .input-form:focus {
     border-color: #4D5AE5;
 }
-.input-form:focus .order-modal-icon{
+.input-form:focus + .order-modal-icon{
      fill: #4D5AE5
 }
 .order-form-input-textarea {
