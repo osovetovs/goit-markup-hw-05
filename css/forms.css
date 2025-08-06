@@ -145,6 +145,11 @@ input:focus::placeholder {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: transparent;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--color-subtle-text);
+  margin-bottom: 4px;
 }
 .order-modal-input {
   position: relative;
@@ -168,16 +173,12 @@ input:focus::placeholder {
   left: 16px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .input-form:hover,
 .input-form:focus {
-  background-color: var(--color-white-background);
-  border-color: var(--color-primary-brand);
-  border: 1px solid var(--color-primary-brand);
+    border-color: #4D5AE5;
 }
-.input-form:hover + .order-modal-icon,
-.input-form:focus + .order-modal-icon {
-  fill: var(--color-primary-brand);
-} */
+.input-form:focus .order-modal-icon{
+     fill: #4D5AE5
+}
 .order-form-input-textarea {
   margin-bottom: 16px;
 }
@@ -201,10 +202,8 @@ input:focus::placeholder {
 }
 .input-textarea:hover,
 .input-textarea:focus {
-  background-color: var(--color-white-background);
-  /* border-color: transparent;
-  border: 1px solid var(--color-primary-brand);
-  transition: var(--trans); */
+  border-color: #4D5AE5;
+
 }
 
 .input-textarea::placeholder {
