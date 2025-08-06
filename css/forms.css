@@ -208,7 +208,7 @@ input:focus::placeholder {
   color: var(--color-subtle-text);
   font-family: inherit;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.48px;
 }
 .agreement-checkbox {
@@ -225,7 +225,7 @@ input:focus::placeholder {
 .order-modal-icon-checkbox {
   fill: transparent;
   transform: scale(1);
-  transition: 500ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 input[type='checkbox']:checked
@@ -233,8 +233,9 @@ input[type='checkbox']:checked
   > .agreement-checkbox {
   border-color: transparent;
   background-color: var(--color-pressed-states);
-  fill: var(--WHITE);
+  fill: var(--color-light);
   transform: scale(1);
+  border: none;
 }
 
 .agreement-link {
@@ -246,7 +247,7 @@ input[type='checkbox']:checked
 }
 .order-modal-button-send {
   color: var(--color-white-background);
-  font-family: inherit;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -256,10 +257,11 @@ input[type='checkbox']:checked
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   display: block;
   margin: 0 auto;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-modal-button-send:hover,
