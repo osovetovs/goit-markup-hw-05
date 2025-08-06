@@ -101,11 +101,12 @@ input:focus::placeholder {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-button:hover {
+/* .modal-button:hover {
   fill: var(--color-white-background);
   background-color: var(--color-pressed-states);
   border: none;
-}
+} */
+.modal-button:hover,
 .modal-button:focus {
   fill: var(--color-white-background);
   background-color: var(--color-pressed-states);
@@ -227,10 +228,8 @@ input:focus::placeholder {
     fill: transparent;
 }
 .order-modal-icon-checkbox {
-  
-  transform: scale(1);
-  
-}
+    transform: scale(1);
+  }
 
 input[type='checkbox']:checked
   + .agreement-label-checkbox
@@ -238,7 +237,7 @@ input[type='checkbox']:checked
   border-color: transparent;
   background-color: var(--color-pressed-states);
   fill: var(--color-light);
-  transform: scale(1);
+  /* transform: scale(1); */
   border: none;
 }
 
