@@ -257,11 +257,11 @@ input[type='checkbox']:checked
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 16px;
+  gap: 24px;
 }
 
 .subscribe-label {
-  color: var(--color-light);
+  color: var(--color-white-background);
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -277,13 +277,14 @@ input[type='checkbox']:checked
   height: 40px;
   border-radius: 4px;
   border: 1px solid var(--color-white-background);
-  background-color: var(--color-hero-background);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--WHITE);
   font-family: inherit;
   font-size: 12px;
   line-height: 2;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
   }
 .subscribe-button {
   display: flex;
@@ -295,7 +296,7 @@ input[type='checkbox']:checked
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
 }
 
@@ -313,11 +314,12 @@ input[type='checkbox']:checked
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.04em;
 }
 
 .subscribe-icon {
   fill: var(--color-white-background);
+  margin-left: 16px
 }
 
 .footer-subscribe-button {
