@@ -105,9 +105,12 @@ input:focus::placeholder {
 .modal-button:focus {
   background-color: var(--color-pressed-states);
   border: none;
+ }
+ 
+.modal-button:hover .modal-button-icon,
+.modal-button:focus .modal-button-icon {
   fill: var(--color-white-background);
 }
-
 .modal-button-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
