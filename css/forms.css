@@ -37,7 +37,7 @@ button {
   padding: 0;
 }
 input::placeholder {
-  color: va(--color-white-background);
+  color: var(--color-white-background);
   font-family: inherit;
   font-size: 12px;
   line-height: 2;
@@ -214,21 +214,11 @@ input:focus::placeholder {
   border: 0;
 }
 
-/* .agreement-label-checkbox {
-  color: var(--color-subtle-text);
-  font-family: inherit;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.48px;
-} */
-
 .agreement-label-checkbox {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--color-subtle-text);
-  display: flex;
-  align-items: center;
   gap: 8px;
 }
 .agreement-checkbox {
@@ -246,21 +236,12 @@ input:focus::placeholder {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
 }
-/* .order-modal-icon-checkbox {
-  transform: scale(1);
-} */
 
-input[type='checkbox']:checked + .agreement-label-checkbox .agreement-checkbox {
+input[type='checkbox']:checked ~ .agreement-label-checkbox .agreement-checkbox {
   background-color: var(--color-pressed-states);
   border: none;
   fill: var(--color-light);
 }
-/* input[type='checkbox']:checked 
-  + .agreement-label-checkbox 
-  > .agreement-checkbox 
-  > .order-modal-icon-checkbox {
-  fill: var(--color-light); 
-} */
 
 .agreement-link {
   color: var(--color-primary-brand);
