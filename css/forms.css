@@ -35,6 +35,10 @@ button {
   cursor: pointer;
   padding: 0;
 }
+
+input{
+  padding-left: 38px;
+}
 input::placeholder {
   color: var(--color-white-background);
   font-family: inherit;
@@ -194,6 +198,10 @@ input:focus::placeholder {
 .input-textarea:focus {
   border-color: #4D5AE5;
 
+}
+
+textarea{
+  padding: 8px 16px;
 }
 
 textarea::placeholder {
