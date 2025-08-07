@@ -12,7 +12,6 @@
   --color-modal-background: #fcfcfc;
   --color-success: #31d0aa;
   --trans: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 body {
   color: var(--color-dark);
@@ -370,7 +369,6 @@ img {
   align-content: stretch;
   gap: 24px;
   row-gap: 48px;
-  
 }
 .portfolio-list-li {
   width: calc((100% - 48px) / 3);
@@ -381,7 +379,6 @@ img {
   letter-spacing: 0.32px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-  
 }
 .portfolio-list-li:hover,
 .portfolio-list-li:focus {
@@ -408,7 +405,7 @@ img {
   font-family: inherit;
   font-size: 16px;
   line-height: 1.5;
-  
+
   /*transform: translateY(100%);*/
 }
 
@@ -417,7 +414,6 @@ img {
   border-right: 1px solid var(--color-accent);
   border-left: 1px solid var(--color-accent);
   border-bottom: 1px solid var(--color-accent);
-  
 }
 
 .overlay-container {
@@ -483,7 +479,11 @@ img {
   line-height: 1.5;
   letter-spacing: 0.32px;
   width: 264px;
-  }
+}
+
+.social-footer{
+  margin-right: 80px;
+}
 .text-social-footer {
   color: var(--color-white-background);
   font-family: inherit;
@@ -517,14 +517,23 @@ img {
   width: 40px;
   height: 40px;
 }
-.footer-subscribe-form {
+.footer-subscribe-box {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+}
+
+.footer-subscribe-form{
+   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 24px;
 }
-.footer-subscribe-form input::placeholder{
-    color: var(--color-white-background);
+
+.footer-subscribe-form input::placeholder {
+  color: var(--color-subtle-text);
 }
 .subscribe-label {
   color: var(--color-white-background);
@@ -546,33 +555,30 @@ img {
   background-color: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--color-white-background);
-    font-family: inherit;
+  font-family: inherit;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
   padding-left: 16px;
-  }
-  
+}
+
 .subscribe-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
   background-color: var(--color-primary-brand);
-  padding: 8px 24px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
   min-width: 165px;
   height: 40px;
-   color: var(--color-white-background);
+  color: var(--color-white-background);
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-
 }
 
 .subscribe-button:hover,
@@ -584,5 +590,5 @@ img {
 
 .subscribe-icon {
   fill: var(--color-white-background);
-  margin-left: 16px
+  margin-left: 16px;
 }
